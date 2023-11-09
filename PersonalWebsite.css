@@ -1,0 +1,123 @@
+.header {
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(177, 208, 189);
+     
+}
+body{
+    background-color:rgb(254, 251, 247);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.navigation{
+    overflow: hidden;
+    display:flex;
+    justify-content:center;
+    font-size: 23px; 
+    background-color: rgb(177, 208, 189);
+    border-radius: 15px;
+    font-weight:400;
+}
+.navigation a{
+    color: rgb(107, 98, 96);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+
+}
+.navigation a:hover{
+    background-color: rgb(150, 188, 167);
+    color: rgb(107, 98, 96);
+
+}
+
+.navigation a:active{
+    background-color: rgb(150, 188, 167);
+    font-weight:400;
+    color: rgb(107, 98, 96);
+
+}
+
+
+.aboutContainer{
+    
+   /*display:flex;*/
+    justify-content:center;
+    margin: 0px 150px 0px 150px; /*top right bottom left*/
+    width: 500px;
+    height: 10px;
+}
+
+.aboutMe {
+    width:1200px;
+    margin: 70px
+}
+
+
+.aboutMe h1{
+    color: rgb(166, 155, 151);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-variant: normal;
+    font-size: 64px;
+    padding-top: 40px;
+
+}
+ 
+
+
+img{
+    /*display:flex;*/
+    float:left;
+    margin-left: 50px;
+    margin-right:50px;
+    
+}
+
+.imageGrid{
+    margin-top: 100px;
+    display:grid;
+    grid-gap: 20px; 
+    width:100%;
+    height:100%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2,1fr) ;
+    
+}
+.imageGrid >img{
+    
+    width:200px;
+    height:300px;
+    object-fit:cover;
+}
+
+.welcomePage{
+    background-image: url("plantsprouts.jpg");
+    margin-top:0px;
+    width:100%;
+    height:100%;
+    background-position:center;
+    align-items:center;
+}
+.welcome{
+    padding-top:10%;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#welcomeheading{
+    font-size:100px;
+    color: rgb(154, 194, 169);
+    font-weight:600;
+}
+#welcomesub{
+    padding-top:2%;
+    font-size:40px;
+    color: rgb(149, 142, 140);
+    font-weight:500px;
+}
+
