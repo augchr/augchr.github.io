@@ -235,7 +235,7 @@ body{
 }
 
 .logoContainer h1{
-    font-size: 80px;
+    font-size: 45px;
     font-weight:600;
     color:rgb(105, 171, 137);
     text-align: center;
@@ -263,8 +263,30 @@ body{
     padding:10%;
 }
 
+.UpperCircle{
+    position:absolute;
+    border-radius: 50%;
+    background-color: rgb(210, 228, 205);
+    height: 100vh;
+    width:100vh;
+    z-index: 1;
+    bottom:.5vh;
+    right:60vw;
+    transform:translate(2vw,-30vh)
+}
+.LowerCircle{
+    position:absolute;
+    border-radius: 50%;
+    background-color: rgb(236, 244, 234);
+    height: 60vh;
+    width:60vh;
+    z-index: 1;
+    top:90vh;
+    right:45vw;
+    transform:translate(1vw,-30vh)
+}
+
 .aboutContainer{
-    background-image:url(AboutMeBg6.png);
     width:100%;
     height:200%;
     background-repeat: no-repeat;
@@ -274,7 +296,7 @@ body{
 
 .aboutContainer2{
     display:grid;
-    margin:30% auto; 
+    margin:30% auto 0 auto; 
     padding: 2% 0%;
     width:90%;
     grid-template-columns: 1fr 1fr;
@@ -332,18 +354,22 @@ body{
     margin:auto auto;
     border-radius:100%;
     animation: welcomeCrossLeft .90s;
+    z-index:2;
 }
 
 
 .section2{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width:100%;
+    
 }
+
 .experiences{
-    margin:22% auto;
+    width:50%;
+    margin: 0 auto;
+    position:relative;
+    z-index: 2;
 
 }
 
@@ -357,7 +383,7 @@ body{
     padding:2%;
     font-size: 50;
     font-weight: 400;
-    
+
 }
 .experiences p{
     width:90%;
@@ -374,6 +400,7 @@ body{
     font-weight: 600;
     font-size: 23px;
     color: rgb(165, 205, 167);
+   
 }
 
 .experiences ul {
@@ -392,6 +419,7 @@ body{
     background-repeat: no-repeat;
     background-position:center;*/
     width:100%;
+    height:100%;
     overflow:hidden;
 
 
