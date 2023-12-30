@@ -54,13 +54,14 @@ body{
 }
 .welcomePage{
     background-size:cover;
-    background-image: url(WelcomeBg.png);
+    background-image: url(HomeBg.png);
     width: 100%;
     height:100%;
     background-repeat:no-repeat;
     background-position:center;
 
 }
+
 .welcome{ 
     width:95%;
     padding: 10% 3%;
@@ -70,13 +71,13 @@ body{
     justify-content: center;
     align-content: center;
 
-
 }
 
 #welcomeHi{
     font-size: 35px;
     color: rgb(100, 109, 102);
     text-align:left;
+    padding-left: 1%;
     letter-spacing:7px;
     word-spacing:12px;
     animation: welcomeCrossRight .90s;
@@ -97,6 +98,8 @@ body{
     letter-spacing:7px;
     text-align:right;
     animation: welcomeCrossLeft .90s;
+    padding-right: 1%;
+
 }
 
 .logo_carousel{
@@ -260,8 +263,6 @@ body{
     padding:10%;
 }
 
-
-
 .aboutContainer{
     background-image:url(AboutMeBg6.png);
     width:100%;
@@ -279,8 +280,6 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     animation: pageTransition .60s;
-
-
 }
 
 .aboutMe {
@@ -329,9 +328,7 @@ body{
 
 
 .aboutMeImg{
-    grid-column: 1;
-    grid-row: 1;
-    width: 65%;
+    height: 50vh;
     margin:auto auto;
     border-radius:100%;
     animation: welcomeCrossLeft .90s;
@@ -344,7 +341,10 @@ body{
     align-items: center;
     justify-content: center;
     width:100%;
-    margin:22% 50% 0 50%;
+}
+.experiences{
+    margin:22% auto;
+
 }
 
 .section2 h1{
@@ -363,7 +363,6 @@ body{
     width:90%;
     margin:0 5vh;
     font-size: 20px;
-    align-items: left;
 
 }
 .experiences h2{
@@ -388,11 +387,13 @@ body{
 
 
 .contactBackground{
-    background-size: cover;
+    /*background-size: cover;
     background-image: url(ContactBg.png);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position:center;*/
     width:100%;
+    overflow:hidden;
+
 
     
 
@@ -401,6 +402,7 @@ body{
 .contactContainer{
     width:100%;
     display:flex;
+    
     
 }
 
@@ -415,7 +417,7 @@ body{
     
 }
 form{
-    width: 70%;
+    width: 25vw;
 }
 .contactForm h2{
     font-size: 60px;
@@ -456,7 +458,7 @@ form{
 .button{
     background-color: rgb(255, 237, 173);
     font-size: 20px;
-    width:25%;
+    width:3vw;
     color: rgb(100, 109, 102);
     padding: 1rem 2rem;
     border-radius: 20px;
@@ -470,58 +472,77 @@ form{
     transition: background-color ease .5s;
     color:rgb(100, 109, 102);
 }
-
-
 .contact{
-    display:flex;
-    flex-direction: column;
-    width:40%;
-    height:30%;
-    margin:10% 0 0 3%;
-    padding: 0 0 0 7%;
-    align-items: center;
-    justify-content: center;
+    margin: 10vh 2vh;
+    position:relative;
+
 }
 
+.contact img{
+    position:absolute;
+    width:30vw;
+    padding: 10vw 10vw;
+    z-index:2;
 
+}
+.circle{
+    position:absolute;
+    border-radius: 50%;
+    background-color: rgb(236, 244, 234);
+    height: 130vh;
+    width:130vh;
+    z-index: 1;
+    top:4vh;
+    left:1vw;
+    transform:translate(1vw,-13vh)
+}
 
+/*
 .bullets{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     font-size: 23px;
-    justify-content: center;
     align-items: center;
+    width:60%;
     list-style-type: none;
+    justify-content:end;
+    padding: 10vh 0;
 }
 
 .phone{
     grid-column:2;
     grid-row:1;
+    padding-left:10px;
 }
 .email{
     grid-column:2;
     grid-row:2;
+    padding-left:10px;
 }
 .insta{
     grid-column:2;
     grid-row:3;
+    padding-left:10px;
 }
 .phoneBullet{
     grid-column:1;
     grid-row:1;
-    width:50%;
+    width:2vw;
+    align-items: right;
+
 }
 .emailBullet{
     grid-column:1;
     grid-row:2;
-    width:50%;
+    width:2vw;
 }
 .instaBullet{
     grid-column:1;
     grid-row:3;
-    width:50%;
+    width:2vw;
 }
+*/
 
 @keyframes pageTransition{
     from{
