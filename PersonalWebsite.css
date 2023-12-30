@@ -27,6 +27,7 @@ body{
     padding: 15px;
     border-radius: 25px;
     text-decoration:none;
+    z-index: 3;
 }
 
 .navigation :last-of-type {
@@ -263,45 +264,22 @@ body{
     padding:10%;
 }
 
-.UpperCircle{
-    position:absolute;
-    border-radius: 50%;
-    background-color: rgb(210, 228, 205);
-    height: 100vh;
-    width:100vh;
-    z-index: 1;
-    bottom:.5vh;
-    right:60vw;
-    transform:translate(2vw,-30vh)
-}
-.LowerCircle{
-    position:absolute;
-    border-radius: 50%;
-    background-color: rgb(236, 244, 234);
-    height: 60vh;
-    width:60vh;
-    z-index: 1;
-    top:90vh;
-    right:45vw;
-    transform:translate(1vw,-30vh)
-}
 
 .aboutContainer{
     width:100%;
-    height:200%;
-    background-repeat: no-repeat;
-    background-position: center;
+    
+
 }
 
 
 .aboutContainer2{
     display:grid;
+    
     margin:30% auto 0 auto; 
     padding: 2% 0%;
     width:90%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    animation: pageTransition .60s;
 }
 
 .aboutMe {
@@ -344,7 +322,7 @@ body{
 #scroll{
     text-align:center;
     padding: 8%;
-    font-weight:800;
+    font-weight:600;
     color:rgb(105, 171, 137);
 }
 
@@ -353,8 +331,10 @@ body{
     height: 50vh;
     margin:auto auto;
     border-radius:100%;
-    animation: welcomeCrossLeft .90s;
     z-index:2;
+
+    animation:  .90s;
+
 }
 
 
@@ -397,7 +377,7 @@ body{
 }
 .experiences h4{
     margin:10 5vh;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 23px;
     color: rgb(165, 205, 167);
    
@@ -413,17 +393,36 @@ body{
 }
 
 
+
+.UpperCircle{
+    position:absolute;
+    border-radius: 50%;
+    background-color: rgb(210, 228, 205);
+    height: 100vh;
+    width:100vh;
+    z-index: 1;
+    bottom:.5vh;
+    right:60vw;
+    transform:translate(2vw,-30vh)
+}
+.LowerCircle{
+    position:absolute;
+    border-radius: 50%;
+    background-color: rgb(236, 244, 234);
+    height: 60vh;
+    width:60vh;
+    z-index: 1;
+    top:90vh;
+    right:45vw;
+    transform:translate(1vw,-30vh)
+}
+
+
 .contactBackground{
-    /*background-size: cover;
-    background-image: url(ContactBg.png);
-    background-repeat: no-repeat;
-    background-position:center;*/
     width:100%;
     height:100%;
     overflow:hidden;
-
-
-    
+    animation:pageTransition .9s;
 
 }
 
@@ -575,7 +574,7 @@ form{
 @keyframes pageTransition{
     from{
         opacity:0;
-        transform: translateX(-30deg);
+        transform: translateX(1vh);
 
     }
     to{
