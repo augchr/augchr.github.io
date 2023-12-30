@@ -64,7 +64,8 @@ body{
 }
 
 .welcome{ 
-    width:95%;
+    width:80%;
+    margin: 0 auto;
     padding: 10% 3%;
     font-family: 'Figtree', sans-serif;
     display:flex;
@@ -347,7 +348,7 @@ body{
 
 .experiences{
     width:50%;
-    margin: 0 auto;
+    margin: 5% auto;
     position:relative;
     z-index: 2;
 
@@ -359,6 +360,7 @@ body{
 
     width:100%;
     background-color: rgb(210, 228, 205);
+    border-radius: 20px;
     text-align: center;
     padding:2%;
     font-size: 50;
@@ -460,7 +462,7 @@ form{
 
 .formAnswer input{
     font-family: 'Figtree', sans-serif;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: rgb(210, 228, 205);
     width:100%;
     padding: 0.9rem;
@@ -476,7 +478,7 @@ form{
     border: none;
     width:100%;
     height:150px;
-    border-radius: 20px;
+    border-radius: 15px;
     resize:none;
     text-align: left;
 }
@@ -491,7 +493,7 @@ form{
     border-radius: 20px;
     text-align: center;
     border:none;
-    margin: 1% auto;
+    margin: 4% auto;
 
 }
 .button:hover{
@@ -519,7 +521,7 @@ form{
     height: 130vh;
     width:130vh;
     z-index: 1;
-    top:4vh;
+    top:3vh;
     left:1vw;
     transform:translate(1vw,-13vh)
 }
